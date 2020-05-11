@@ -1,0 +1,104 @@
+/*centrar todas las etiquetas de la pagina*/
+
+nav, header, .contenedor, aside, .central, footer{
+    max-width: 92%;
+    margin: auto;
+}
+body{
+    background-image: url("../img/encabezado.png");
+    color: floralwhite;
+}
+header{
+    background-color: brown;
+}
+
+
+
+
+
+
+nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top:70px;
+    bottom: 0px;
+    left: 0px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+}
+nav a{
+    cursor: pointer;
+    display: block;
+    background-color: #F47920;
+    border: solid 4px #005883;
+    color: #FFF;
+    font-weight: bold;
+    padding: 8px 50px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 18pt;
+}
+nav a:hover{
+    background-color: #005883;
+}
+nav > ul > li > a{
+    padding: 8px 15px;
+}
+
+nav {
+    display: block;
+    top:30px;
+    width: unset;
+    left: unset;
+    bottom: unset;
+    overflow-y: unset;
+    right: 0;
+}
+nav ul {
+    width: unset;
+}
+nav > ul > li {
+    float: left;
+}
+nav a{
+    display: block;
+    background-color: #F47920;
+    border: none;
+    font-weight: normal;
+    padding: 6px 10px;
+    width: 180px;
+    font-size: 12pt;
+}
+nav > ul > li > a{
+    text-align: center;
+    background-color: #005883;
+    padding: 8px;
+    margin: 2px;
+    width: 80px;
+}
+nav > ul > li > a:hover{
+    background-color: #F47920;
+}
+nav li ul{
+    display: none;
+    position: absolute;
+}
+nav li:hover > ul{
+    display: block;
+}
+nav > ul::after{
+    content: "";
+    display: list-item;
+    float: left;
+    margin: 2px;
+    background-color: #005883;
+    height: 35px;
+    width: 30px;
+}
+
+
